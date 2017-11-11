@@ -339,6 +339,6 @@ function initialize(){
         map: map,
         title: 'Welcome to Yangon'
     });
+    google.maps.event.addDomListener(window, 'resize', initialize);
 }
 
-google.maps.event.addDomListener(window, 'resize', initialize);

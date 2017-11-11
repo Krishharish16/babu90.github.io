@@ -340,5 +340,5 @@ function initialize(){
         title: 'Welcome to Yangon'
     });
 }
-google.maps.event.addDomListener(window, 'load', initialize);
+
 google.maps.event.addDomListener(window, 'resize', initialize);

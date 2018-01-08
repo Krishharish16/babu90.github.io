@@ -318,7 +318,7 @@ function initialize(){
     ];
     //map options
     var mapOptions = {
-        zoom: 8,
+        zoom: 12,
         center: myLatlng ,
         mapTypeControlOptions: {mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'map_style']} ,
         panControl: false , //hide panControl

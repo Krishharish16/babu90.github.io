@@ -318,7 +318,7 @@ function initialize(){
     ];
     //map options
     var mapOptions = {
-        zoom: 16,
+        zoom: 8,
         center: myLatlng ,
         mapTypeControlOptions: {mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'map_style']} ,
         panControl: false , //hide panControl
@@ -336,7 +336,7 @@ function initialize(){
 	
 	  var infoWindowContent = '<div class="info_content">' +
         '<h3>XOXO POPS</h3>' +
-        '<p>Jaya Nagar, Reddiarpalayam, Puducherry, 605009.</p>' +
+        '<p><h4>Jaya Nagar, Reddiarpalayam, Puducherry, 605009.<h4></p>' +
     '</div>';
 
         var infowindow = new google.maps.InfoWindow({

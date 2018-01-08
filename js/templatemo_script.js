@@ -334,17 +334,13 @@ function initialize(){
     map.mapTypes.set('map_style', styledMap);
     map.setMapTypeId('map_style');
 	
-	  var contentString = '<div id="content">'+
-            '<div id="siteNotice">'+
-            '</div>'+
-            '<h1 id="firstHeading" class="firstHeading"></h1>'+
-            '<div id="bodyContent">'+
-            '<p><b>XOXO POPS</b>Reddiarpalayam,Puducherry</p>'+
-            '</div>'+
-            '</div>';
+	  var infoWindowContent = '<div class="info_content">' +
+        '<h3>XOXO POPS</h3>' +
+        '<p>Jaya Nagar, Reddiarpalayam, Puducherry, 605009.</p>' +
+    '</div>';
 
         var infowindow = new google.maps.InfoWindow({
-          content: contentString
+          content: infoWindowContent
         });
 	
     //add marker

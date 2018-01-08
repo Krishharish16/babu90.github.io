@@ -333,12 +333,30 @@ function initialize(){
     var styledMap = new google.maps.StyledMapType(styles,{name: "Styled Map"});
     map.mapTypes.set('map_style', styledMap);
     map.setMapTypeId('map_style');
+	
+	  var contentString = '<div id="content">'+
+            '<div id="siteNotice">'+
+            '</div>'+
+            '<h1 id="firstHeading" class="firstHeading"></h1>'+
+            '<div id="bodyContent">'+
+            '<p><b>XOXO POPS</b>Reddiarpalayam,Puducherry</p>'+
+            '</div>'+
+            '</div>';
+
+        var infowindow = new google.maps.InfoWindow({
+          content: contentString
+        });
+	
     //add marker
     var marker = new google.maps.Marker({
         position: myLatlng,
         map: map,
-        title: 'Welcome to Yangon'
+        title: 'Welcome to XOXOPOPS'
     });
+	
+	marker.addListener('click', function() {
+          infowindow.open(map, marker);
+        });
     google.maps.event.addDomListener(window, 'resize', initialize);
 }
 

@@ -343,30 +343,14 @@ function initialize(){
           content: infoWindowContent
         });
 	
-        var icons = {
-          pops: {
-            icon:'favicon.png'
-          }
-        };
-	
-	var features = [
-         {
-            position: new google.maps.LatLng(11.931787, 79.792474),
-            type: 'pops'
-          }
-        ];
-	
-	// Create markers.
-        features.forEach(function(feature) {
  	//add marker
    	 var marker = new google.maps.Marker({
         	position: myLatlng,
-	 	icon: icons[feature.type].icon,
+            	icon:'favicon.png',
        		 map: map,
         	title: 'XOXOPOPS'
-   		 });
-        });
-	
+   	});
+       
 	marker.addListener('click', function() {
           infowindow.open(map, marker);
         });

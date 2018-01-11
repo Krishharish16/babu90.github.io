@@ -343,12 +343,29 @@ function initialize(){
           content: infoWindowContent
         });
 	
-    //add marker
-    var marker = new google.maps.Marker({
-        position: myLatlng,
-        map: map,
-        title: 'Welcome to XOXOPOPS'
-    });
+        var icons = {
+          pops: {
+            icon:'favicon.png'
+          }
+        };
+	
+	var features = [
+         {
+            position: new google.maps.LatLng(11.931787, 79.792474),
+            type: 'pops'
+          }
+        ];
+	
+	// Create markers.
+        features.forEach(function(feature) {
+ 	//add marker
+   	 var marker = new google.maps.Marker({
+        	position: feature.position,
+	 	icon: icons[feature.type].icon,
+       		 map: map,
+        	title: 'Welcome to XOXOPOPS'
+   		 });
+        });
 	
 	marker.addListener('click', function() {
           infowindow.open(map, marker);

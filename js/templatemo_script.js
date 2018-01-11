@@ -360,10 +360,10 @@ function initialize(){
         features.forEach(function(feature) {
  	//add marker
    	 var marker = new google.maps.Marker({
-        	position: feature.position,
+        	position: myLatlng,
 	 	icon: icons[feature.type].icon,
        		 map: map,
-        	title: 'Welcome to XOXOPOPS'
+        	title: 'XOXOPOPS'
    		 });
         });
 	

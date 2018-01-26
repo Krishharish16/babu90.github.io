@@ -346,7 +346,7 @@ function initialize(){
  	//add marker
    	 var marker = new google.maps.Marker({
         	position: myLatlng,
-            	icon:'favicon.png',
+            	icon:'mapicon.png',
        		 map: map,
         	title: 'XOXOPOPS'
    	});

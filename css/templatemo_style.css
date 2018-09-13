@@ -108,7 +108,7 @@ h1 {
 }
 .banner ul li { 
     float: left; 
-    background-size:50px 50px;
+    visibility:hidden;
     height:500px;
     width: 100%;
 }

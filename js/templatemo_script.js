@@ -18,6 +18,7 @@ jQuery(function(){
         banner_height = ($(document).width()/1920) * 760;
         $('.banner').height(banner_height);
         $('.banner ul li').height(banner_height);
+	$('.banner ul li').css("visibility","visible");
         if(banner_height > 250){
             caption_margin_top = (banner_height-100)/2;
             $('.banner .slide_caption:hidden').show();

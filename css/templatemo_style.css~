@@ -108,6 +108,7 @@ h1 {
 }
 .banner ul li { 
     float: left; 
+    visibility:hidden;
     height:500px;
     width: 100%;
 }
